@@ -8,6 +8,7 @@ header {
 h1 {
   color: hsla(0, 0%, 0%, 1);
   font-weight: bold;
+  margin-top: 0;
 }
 
 .slogan {
@@ -19,16 +20,28 @@ main {
   max-width: 900px;
 }
 
+.featured-project__title {
+  margin-bottom: 0px;
+}
+
 .project-description {
-  padding-left: 0;
+  /* padding: 0;*/
+  text-align: left;
+  /* margin: 0 auto;
+  margin-bottom: 10px; */
 }
 
 .project img {
   width: 100%;
 }
 
+.mdl-layout_content {
+  margin-bottom: 50px;
+}
+
 body {
   padding-bottom: 5rem;
+  /* min-height: 100%; */
 }
 
 footer.mdl-mini-footer {
@@ -45,5 +58,7 @@ footer.mdl-mini-footer > ul {
 @media screen and (max-width: 1024px) {
   header.mdl-layout_header {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
